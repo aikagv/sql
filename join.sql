@@ -33,7 +33,7 @@ ON e.id = es.employee_id
 JOIN salary s 
 ON s.id = es.salary_id 
 WHERE employee_name IS NULL
-and s.mONthly_salary < 2000;
+and s.monthly_salary < 2000;
 
 -- 5.Show all employees who have not received a salary
 SELECT employee_name, salary_id
@@ -59,7 +59,7 @@ JOIN roles r
 ON r.id = re.role_id 
 WHERE role_name LIKE '%Java developer%' ;
 
--- 8.Show names and positions only for PythON developers 
+-- 8.Show names and positions only for Python developers 
 SELECT employee_name, role_name
 FROM employees e 
 JOIN roles_employee re 
@@ -77,7 +77,7 @@ JOIN roles r
 ON r.id = re.role_id 
 WHERE role_name LIKE '%QA%' ;
 
--- 10.Show names and positiONs only for Manual QA engineers
+-- 10.Show names and positions only for Manual QA engineers
 SELECT employee_name, role_name
 FROM employees e 
 JOIN roles_employee re 
@@ -86,7 +86,7 @@ JOIN roles r
 ON r.id = re.role_id 
 WHERE role_name LIKE '%Manual QA%' ;
 
--- 11.Show names and positiONs only for AutomatiON QA engineers
+-- 11.Show names and positions only for Automation QA engineers
 SELECT employee_name, role_name
 FROM employees e 
 JOIN roles_employee re 
